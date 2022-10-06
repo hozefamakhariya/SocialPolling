@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:enabled="true"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/toolcolor"
+        app:cnb_iconTintMode="@color/toolcolor"
+        app:cnb_textColor="@color/toolcolor"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/toolcolor"
+        app:cnb_iconTintMode="@color/toolcolor"
+        app:cnb_textColor="@color/toolcolor"
+        android:icon="@drawable/ic_baseline_search_24"/>
+
+    <item
+        android:id="@+id/acc"
+        android:title="Profile"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/toolcolor"
+        app:cnb_iconTintMode="@color/toolcolor"
+        app:cnb_textColor="@color/toolcolor"
+        android:icon="@drawable/ic_baseline_person_24"/>
+
+</menu>

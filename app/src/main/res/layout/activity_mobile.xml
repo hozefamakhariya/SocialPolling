@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MobileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="10dp"
+        app:navigationIcon="@drawable/ic_baseline_close_24"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/toolcolor"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/mainlogo" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Log in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:text="Welcome back!"
+                    android:padding="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/goodbye"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:textSize="14dp"
+                android:layout_marginTop="25dp"
+                android:text="Mobile Number"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginTop="7dp"
+                android:padding="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:background="@drawable/edit_bg"
+                android:maxLength="10"
+                android:inputType="number" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/otp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:cornerRadius="15dp"
+                app:elevation="10dp"
+                android:text="Generate OTP"
+                android:textStyle="bold"
+                app:iconGravity="end"
+                android:textAlignment="textStart"
+                app:icon="@drawable/ic_baseline_arrow_forward_24"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                app:backgroundTint="@color/toolcolor"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_gray"
+                android:text="or"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/google"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardElevation="8dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="@color/white">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@mipmap/google"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login_button"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fb"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardElevation="8dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="@color/fb_color">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@mipmap/facebook"
+                        app:tint="@color/white"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Forgot which social platform or mobile number you signed\nup with? We can help you:"/>
+
+            <TextView
+                android:id="@+id/frgt"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Forgot login?"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/btncolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Version 1.0"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

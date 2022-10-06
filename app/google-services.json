@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "976262251822",
+    "firebase_url": "https://surveymonk-c8bd1-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "surveymonk-c8bd1",
+    "storage_bucket": "surveymonk-c8bd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976262251822:android:836b0a9acedb03b5f226bf",
+        "android_client_info": {
+          "package_name": "com.techomega.socialpolling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976262251822-23ftm7vrnkj5abg3vp809l42fla744r0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techomega.socialpolling",
+            "certificate_hash": "2606abe662f2d6d571f45061f1ef18a5ac2f1840"
+          }
+        },
+        {
+          "client_id": "976262251822-b4egonh28jpmrpdb133feq5kr57kc109.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD59dvYmBhlDU2-D-ul-bn6i4qzvkmBzdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976262251822-b4egonh28jpmrpdb133feq5kr57kc109.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
